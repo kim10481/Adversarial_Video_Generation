@@ -1,3 +1,6 @@
+# UPDATED by Kim
+The original codes from dyelax updated for tensorflow==1.4.0 and python3.6
+
 # Adversarial Video Generation
 This project implements a generative adversarial network to predict future frames of video, as detailed in 
 ["Deep Multi-Scale Video Prediction Beyond Mean Square Error"](https://arxiv.org/abs/1511.05440) by Mathieu, 
