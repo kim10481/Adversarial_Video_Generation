@@ -7,7 +7,9 @@ def w(shape, stddev=0.01):
     @return A weight layer with the given shape and standard deviation. Initialized with a
             truncated normal distribution.
     """
-    return tf.Variable(tf.truncated_normal(shape, stddev=stddev))
+    for i in range(len(shape)):
+        shape[i]=int(shape[i])
+    return tf.Variable(tf.random.truncated_normal(shape, stddev=stddev))
 
 
 def b(shape, const=0.1):
